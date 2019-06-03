@@ -5,8 +5,9 @@ import java.security.MessageDigest;
 
 /**
  * 公共工具类.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class CommonUtil {
 

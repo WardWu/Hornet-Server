@@ -1,11 +1,14 @@
 package com.hornet.nest.model.dto;
 
+import com.hornet.nest.enums.ResponseEnum;
+
 import java.io.Serializable;
 
 /**
  * 统一返回参数.
- * Author： shengwu
- * DATE ：  2019/3/8
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class HornetResponse<T extends Serializable> implements Serializable {
 
@@ -50,6 +53,15 @@ public class HornetResponse<T extends Serializable> implements Serializable {
      */
     public HornetResponse() {
     }
+
+    /**
+     * 默认构造函数.
+     */
+    public HornetResponse(ResponseEnum responseEnum) {
+        this.code = responseEnum.getCode();
+        this.message = responseEnum.getMessage();
+    }
+
 
     /**
      * 默认构造函数.

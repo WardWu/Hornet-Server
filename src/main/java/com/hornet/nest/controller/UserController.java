@@ -1,6 +1,6 @@
 package com.hornet.nest.controller;
 
-import com.hornet.nest.common.ResponseMeta;
+import com.hornet.nest.enums.ResponseEnum;
 import com.hornet.nest.model.UserActionDo;
 import com.hornet.nest.model.dto.HornetResponse;
 import com.hornet.nest.model.dto.UserActionDto;
@@ -16,8 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 用户行为控制层.
- * @author： shengwu
- * @date ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 @RestController
 @RequestMapping("user")
@@ -33,11 +34,11 @@ public class UserController {
     public HornetResponse<String> registered(UserActionDto userActionDto) {
         UserActionDo userActionDo = CheckUtil.checkUserAction(userActionDto);
         if (userActionDo == null) {
-            return new HornetResponse<>(ResponseMeta.PARAMS_EXCEPTION_CODE, ResponseMeta.PARAMS_EXCEPTION_MESSAGE);
+            return new HornetResponse<>(ResponseEnum.PARAM_ERROR);
         }
         String userId = userService.registered(userActionDo);
         if (StringUtils.isBlank(userId)) {
-            return new HornetResponse<>(ResponseMeta.SERVER_EXCEPTION_CODE, ResponseMeta.SERVER_EXCEPTION_MESSAGE);
+            return new HornetResponse<>(ResponseEnum.SERVER_ERROR);
         }
         return new HornetResponse<>(userId);
     }
@@ -49,7 +50,7 @@ public class UserController {
     public HornetResponse<String> login(UserActionDto userActionDto) {
         UserActionDo userActionDo = CheckUtil.checkUserAction(userActionDto);
         if (userActionDo == null) {
-            return new HornetResponse<>(ResponseMeta.PARAMS_EXCEPTION_CODE, ResponseMeta.PARAMS_EXCEPTION_MESSAGE);
+            return new HornetResponse<>(ResponseEnum.PARAM_ERROR);
         }
         String userId = userService.login(userActionDo);
         return new HornetResponse<>(userId);
@@ -73,7 +74,7 @@ public class UserController {
     public HornetResponse<Boolean> updateUserPassword(UserActionDto userActionDto) {
         UserActionDo userActionDo = CheckUtil.checkUserAction(userActionDto);
         if (userActionDo == null) {
-            return new HornetResponse<>(ResponseMeta.PARAMS_EXCEPTION_CODE, ResponseMeta.PARAMS_EXCEPTION_MESSAGE);
+            return new HornetResponse<>(ResponseEnum.PARAM_ERROR);
         }
         boolean update = userService.updateUserPassword(userActionDo);
         return new HornetResponse<>(update);

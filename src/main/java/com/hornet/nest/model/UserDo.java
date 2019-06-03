@@ -5,8 +5,9 @@ import java.util.List;
 
 /**
  * 用户基础信息.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class UserDo extends UserBaseDo implements Serializable {
 

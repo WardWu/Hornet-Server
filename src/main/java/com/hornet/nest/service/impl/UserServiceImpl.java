@@ -6,7 +6,6 @@ import com.hornet.nest.model.UserActionDo;
 import com.hornet.nest.service.UserService;
 import com.hornet.nest.util.CommonUtil;
 import com.hornet.nest.util.SnowflakeKeyUtil;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +13,9 @@ import org.springframework.stereotype.Service;
 
 /**
  * 用户行为业务处理实现层.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 @Service
 public class UserServiceImpl implements UserService {

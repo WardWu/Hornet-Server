@@ -14,8 +14,9 @@ import java.util.List;
 
 /**
  * 用户数据处理实现层.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 @Repository
 public class UserDaoImpl implements UserDao {

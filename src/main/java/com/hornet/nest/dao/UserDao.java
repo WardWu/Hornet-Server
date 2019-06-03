@@ -5,8 +5,9 @@ import com.hornet.nest.model.UserDo;
 
 /**
  * 用户数据处理层.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public interface UserDao {
 

@@ -5,8 +5,9 @@ import java.util.List;
 
 /**
  * 统一返回参数.
- * Author： shengwu
- * DATE ：  2019/3/8
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class HornetListResponse<T extends Serializable> implements Serializable {
 

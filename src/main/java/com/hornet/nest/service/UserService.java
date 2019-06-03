@@ -1,12 +1,12 @@
 package com.hornet.nest.service;
 
 import com.hornet.nest.model.UserActionDo;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 /**
  * 用户行为业务处理层.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public interface UserService {
 

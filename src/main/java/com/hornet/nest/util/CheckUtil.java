@@ -9,8 +9,9 @@ import java.util.regex.Pattern;
 
 /**
  * 验证类.
- * Author： shengwu
- * DATE ：  2018/11/27
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class CheckUtil {
 

@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * base控制层.
- * Author： shengwu
- * DATE ：  2019/2/13
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 @RestController
 public class BaseController {

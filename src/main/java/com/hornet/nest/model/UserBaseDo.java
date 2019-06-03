@@ -4,8 +4,9 @@ import java.io.Serializable;
 
 /**
  * 基础 model.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class UserBaseDo implements Serializable {
 

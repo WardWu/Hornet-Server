@@ -4,8 +4,9 @@ import java.io.Serializable;
 
 /**
  * 虚拟币.
- * Author： shengwu
- * DATE ：  2018/11/22
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class VirtualCurrencyModel implements Serializable {
 

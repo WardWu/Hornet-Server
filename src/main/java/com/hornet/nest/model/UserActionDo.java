@@ -4,8 +4,9 @@ import java.io.Serializable;
 
 /**
  * 用户登录.
- * Author： shengwu
- * DATE ：  2019/3/7
+ *
+ * @author: shengwu
+ * @date: 2019/3/8
  */
 public class UserActionDo implements Serializable {
 
